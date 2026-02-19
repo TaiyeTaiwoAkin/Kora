@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/layout/Navbar";
 import Hero from "@/components/home/Hero";
 import ValueProposition from "@/components/home/ValueProposition";
 import FeaturedDesigners from "@/components/home/FeaturedDesigners";
@@ -7,13 +8,16 @@ import Footer from "@/components/home/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <ValueProposition />
-      <FeaturedDesigners />
-      <HowItWorks />
-      <WaitlistForm />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <ValueProposition />
+        <FeaturedDesigners />
+        <HowItWorks />
+        <WaitlistForm />
+        <Footer />
+      </main>
+    </>
   );
 }
